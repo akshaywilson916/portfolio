@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Dorbesh Baba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #eef6f3;
+      color: #222;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .profile-card, .intro-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .profile-card {
+      flex: 1;
+      max-width: 300px;
+      text-align: center;
+    }
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .profile-card h2 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    .profile-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .social-icons a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+    .intro-card {
+      flex: 2;
+      max-width: 650px;
+    }
+    .intro-card h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .intro-card h1 strong {
+      font-weight: 700;
+    }
+    .status {
+      margin: 15px 0;
+      color: green;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: green;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .download-btn {
+      display: inline-block;
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    @media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <img src="C:\Users\AKSHAY WILSON\OneDrive\Desktop.jpg" alt="Dorbesh Baba">
+      <h2>Dorbesh Baba</h2>
+      <p>I am a Web Designer based in San Francisco.</p>
+      <div class="social-icons">
+        <a href="#">🔵</a>
+        <a href="#">❌</a>
+        <a href="#">🔗</a>
+        <a href="#">📧</a>
+      </div>
+    </div>
+
+    <div class="intro-card">
+      <p>Hello There!</p>
+      <h1>I'M <strong>DORBESH BABA</strong>, A PRODUCT DESIGNER CRAFTING <span style="font-weight:400;">USER-CENTRIC DESIGN</span> WITH <strong>PIXEL-PERFECT PRECISION</strong>.</h1>
+      <div class="status">Available for Freelancing</div>
+      <a href="#" class="download-btn">Download CV ⬇️</a>
+    </div>
+  </div>
+</body>
+</html>
